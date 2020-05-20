@@ -10,7 +10,7 @@
 
 A simple and reusable Datepicker component for React ([Demo](https://reactdatepicker.com/))
 
-![](https://cloud.githubusercontent.com/assets/1412392/5339491/c40de124-7ee1-11e4-9f07-9276e2545f27.png)
+![Image of modified component](https://github.com/saruchi-aggarwal/react-datepicker/blob/master/date-picker.png)
 
 ## Installation
 
