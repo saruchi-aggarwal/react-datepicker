@@ -7,6 +7,28 @@
   border: 0;
 }
 
+.react-datepicker_input-default {
+  font-size: 13px;
+  border-radius: 4px;
+  border: 1px solid $datepicker__border-color;
+  line-height: 16px;
+  padding: 6px 10px 5px;
+
+  &:hover {
+    // Todo: move box shadow color
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  &:focus {
+    border-color: darken($datepicker__border-color, 10%);
+  }
+}
+
+// TODO: not used anywhere as of now, prop needed to use this
+.react-datepicker_input-error {
+  @extend .react-datepicker_input-default;
+  border-color: $error-color;
+}
+
 .react-datepicker {
   font-family: $datepicker__font-family;
   font-size: $datepicker__font-size;
@@ -51,7 +73,7 @@
       @extend %triangle-arrow-up;
     }
   }
-  
+
   &[data-placement="bottom-end"],
   &[data-placement="top-end"] {
     .react-datepicker__triangle {
@@ -336,7 +358,6 @@
   white-space: nowrap;
 }
 
-.react-datepicker__day-name,
 .react-datepicker__day,
 .react-datepicker__time-name {
   color: $datepicker__text-color;
@@ -345,6 +366,11 @@
   line-height: $datepicker__item-size;
   text-align: center;
   margin: $datepicker__day-margin;
+}
+
+.react-datepicker__day-name {
+  @extend .react-datepicker__day;
+  color: $datepicker__header-text-color;
 }
 
 .react-datepicker__month,

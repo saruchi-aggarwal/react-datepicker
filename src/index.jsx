@@ -813,6 +813,7 @@ export default class DatePicker extends React.Component {
 
   renderDateInput = () => {
     const className = classnames(this.props.className, {
+      "react-datepicker_input-default": true,
       [outsideClickIgnoreClass]: this.state.open
     });
 
